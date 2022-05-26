@@ -1,0 +1,52 @@
+{
+    "name": "jampire/php-vadzim-yanushchyk",
+    "type": "project",
+    "description": "PHP Innowise Training Course for beginners",
+    "keywords": ["php", "training", "course", "beginner", "trainee", "junior", "innowise"],
+    "homepage": "https://github.com/Jampire/php-innowise-trainings",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dzianis Kotau",
+            "email": "me@dzianiskotau.com",
+            "homepage": "https://dzianiskotau.com/",
+            "role": "Owner"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Jampire/php-innowise-trainings/issues"
+    },
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "overtrue/phplint": "^5.1",
+        "phpunit/phpunit": "^9.5",
+        "roave/security-advisories": "dev-latest",
+        "squizlabs/php_codesniffer": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": ["lib/includes.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "phpcs": "phpcs --standard=PSR12 src/ tests/",
+        "phpcbf": "phpcbf --standard=PSR12 src/ tests/",
+        "phplint": "phplint",
+        "phpunit": "XDEBUG_MODE=coverage vendor/bin/phpunit"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
