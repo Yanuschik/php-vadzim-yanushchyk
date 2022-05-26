@@ -11,4 +11,4 @@ Your code:
 You have to deliver the solution files to your Git repository as pull request. Do not merge your code 
 to master/main branch without mentor's permission. 
 
-Ask your mentor if you have any questions...
+Ask your mentor if you have any questions.
